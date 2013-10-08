@@ -2,7 +2,7 @@ UNTreF - Algoritmos y Programación 1
 
 # Práctica de Encapsulamiento - Examen
 
-### Enunciado
+## Enunciado
 
 Implementar la clase `Examen` con las siguientes operaciones:
 
@@ -18,6 +18,8 @@ Implementar la clase `Examen` con las siguientes operaciones:
 
 Ejemplifique el uso de la clase, indicando el resultado esperado.
 
-### Solución
+## Resolución
 
-`Examen.java` [ver](../master/src/Examen.java)
+1. Primera aproximación: `Examen.java` [version 1][version1]
+
+[version1]:../version1/src/Examen.java

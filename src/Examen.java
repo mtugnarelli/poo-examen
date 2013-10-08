@@ -28,5 +28,20 @@ public class Examen {
 		return nota;
 	}
 	
-	
+	/**
+	 * pre : correccion está en el rango [0,100] y representa el porcentaje de corrección 
+	 *       que tiene un punto del examen que aún no ha sido registrado, por ejemplo:
+	 *       
+	 *        0 : MAL
+	 *       50 : REGULAR
+	 *       100: EXCELENTE
+	 *       
+	 * post: acumula la corrección de un nuevo punto.
+	 */
+	public void corregirPunto(double correccion) {
+		
+		double valorDeCadaPunto = 10 / puntos;
+		
+		nota = nota + valorDeCadaPunto * (correccion / 100);
+	}
 }
