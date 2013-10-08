@@ -5,6 +5,8 @@ public class Examen {
 	
 	private double nota = 0.0;
 	
+	private int puntosCorregidos = 0;
+	
 	/**
 	 * pre : puntosTotales es mayo a cero e indica la cantidad de puntos (items) con los
 	 *       que contará el Examen.
@@ -43,6 +45,8 @@ public class Examen {
 		double valorDeCadaPunto = 10 / puntos;
 		
 		nota = nota + valorDeCadaPunto * (correccion / 100);
+		
+		puntosCorregidos = puntosCorregidos + 1;
 	}
 	
 	/**
@@ -53,5 +57,11 @@ public class Examen {
 		return puntos;
 	}
 	
-	
+	/**
+	 * post: devuelve la cantidad de puntos del Examen que ya han sido corregidos.
+	 */
+	public int contarPuntosCorregidos() {
+		
+		return puntosCorregidos;
+	}
 }
