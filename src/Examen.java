@@ -44,4 +44,14 @@ public class Examen {
 		
 		nota = nota + valorDeCadaPunto * (correccion / 100);
 	}
+	
+	/**
+	 * post: devuelve la cantidad de puntos que tiene el Examen.
+	 */
+	public int contarPuntos() {
+		
+		return puntos;
+	}
+	
+	
 }
