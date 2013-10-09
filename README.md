@@ -21,3 +21,28 @@ Ejemplifique el uso de la clase, indicando el resultado esperado.
 ## Resolución
 
 `Examen.java` [ver](../master/src/Examen.java)
+
+```java
+Examen examenDeMartin = new Examen(5)
+examenDeMartin.corregirPunto(100.0)
+examenDeMartin.corregirPunto(50.0)
+examenDeMartin.corregirPunto(25.0)
+examenDeMartin.corregirPunto(100.0)
+examenDeMartin.contarPuntosCorregidos()
+examenDeMartin.corregirPunto(50.0)
+examenDeMartin.calcularNota()
+
+Examen examenDeAlicia = new Examen(5)
+examenDeAlicia.corregirPunto(75.0)
+examenDeAlicia.corregirPunto(30.0)
+examenDeAlicia.contarPuntosCorregidos()
+examenDeAlicia.calcuarNota()
+
+Examen examenDeCarlosLibre = new Examen(10)
+examenDeCarlosLibre.contarPuntos()
+examenDeCarlosLibre.contarPuntosCorregidos()
+examenDeCarlosLibre.calcularNota()
+examenDeCarlosLibre.corregirPunto(25.0)
+examenDeCarlosLibre.contarPuntosCorregidos()
+examenDeCarlosLibre.calcularNota()
+```
