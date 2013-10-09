@@ -1,7 +1,7 @@
 
 /**
  * Un Examen está conformado por una cantidad de puntos que es definida al momento
- * de crearlo.
+ * de instanciarlo.
  * 
  * La nota mínima de un Examen es 0 y la máxima 10.
  * 
@@ -56,12 +56,16 @@ public class Examen {
 	 * post: acumula la corrección de un nuevo punto.
 	 */
 	public void corregirPunto(double correccion) {
-		
-		double valorDeCadaPunto = 10 / puntos;
-		
-		nota = nota + valorDeCadaPunto * (correccion / 100);
-		
-		puntosCorregidos = puntosCorregidos + 1;
+
+		/* se asegura que no se corrijan más puntos que los del Examen */
+		if (this.puntosCorregidos < this.puntos) {
+			
+			double valorDeCadaPunto = 10 / puntos;
+			
+			nota = nota + valorDeCadaPunto * (correccion / 100);
+			
+			puntosCorregidos = puntosCorregidos + 1;
+		}
 	}
 	
 	/**
