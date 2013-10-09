@@ -20,6 +20,4 @@ Ejemplifique el uso de la clase, indicando el resultado esperado.
 
 ## Resolución
 
-1. Primera aproximación: `Examen.java` [version 1][version1]
-
-[version1]:../version1/src/Examen.java
+`Examen.java` [ver](../master/src/Examen.java)
