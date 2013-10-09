@@ -1,4 +1,19 @@
 
+/**
+ * Un Examen está conformado por una cantidad de puntos que es definida al momento
+ * de crearlo.
+ * 
+ * La nota mínima de un Examen es 0 y la máxima 10.
+ * 
+ * Cada uno de los puntos que tiene un Examen tiene el mismo valor. Por ejemplo, si el
+ * Examen tiene 10 puntos, cada uno vale 1. Si el Examen tiene 5 puntos, cada uno vale 2.
+ * Si el Examen tiene 20 puntos, cada uno vale 0,5.
+ * 
+ * Al momento de corregir se indica qué porcentaje de corrección tiene un punto, y por 
+ * lo tanto, que porcentaje de su valor se suma a la nota. Por ejemplo, si el Examen
+ * tiene 5 puntos (por lo tanto cada punto vale 2) y un punto obtiene 50% en su corrección,
+ * éste suma 1 a la nota.
+ */
 public class Examen {
 
 	private int puntos = 1;
